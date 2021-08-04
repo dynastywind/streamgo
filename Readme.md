@@ -1,5 +1,7 @@
 # STREAM-GO
 
+![go-stream workflow](https://github.com/dynastywind/streamgo/actions/workflows/go.yml/badge.svg)
+
 This is a GOLANG port of Java's Stream API. It replicates most of the major methods supported in *java.util.stream.Stream* class.
 
 Although it has achieved great success in parallel computing, it is notorious in GOLANG that there is little community support to provide production-ready, easy-to-understand and state-of-art utility libraries (e.g. advanced data structures, stream APIs to process data fluently), when comparing to other traditional languages like Java and C++. This repository is a small effort to make gophers' life better.
