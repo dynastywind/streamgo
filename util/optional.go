@@ -80,11 +80,7 @@ func (opt *Optional) FlatMap(mapper func(data interface{}) *Optional) *Optional 
 	if !opt.IsPresent() {
 		return opt
 	}
-	o := mapper(opt.Get())
-	if o.IsPresent() {
-		return o
-	}
-	return OfEmpty()
+	return mapper(opt.Get())
 }
 
 func (opt *Optional) IfPresent(consumer func(data interface{})) {
